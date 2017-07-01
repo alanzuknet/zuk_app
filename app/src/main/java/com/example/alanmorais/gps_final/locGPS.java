@@ -34,7 +34,7 @@ public class locGPS implements LocationListener {
         int permissionCheck = ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION);
 
         if(!isGPSEnable && !isNetworkEnable) {
-            throw new RuntimeException("Favor ligar GPS ou prover uma conexão com a internet");
+            throw new RuntimeException("favor ligar GPS ou prover uma conexão com a internet");
         }else{
             if(isNetworkEnable) {
                 //Transformando essa classe em um listener de eventor relacionados ao GPS
